@@ -612,7 +612,7 @@ export default class ImageGallery extends React.Component {
         }
         totalScroll = this._thumbnails.scrollHeight - thumbnailsWrapperHeight;
       } else {
-        if (this._thumbnails.scrollWidth <= thumbnailsWrapperWidth || thumbnailsWrapperWidth <= 0) {
+        if (this._thumbnails.scrollWidth <= thumbnailsWrapperWidth) {
           return 0;
         }
         totalScroll = this._thumbnails.scrollWidth - (thumbnailsWrapperWidth || this._thumbnailsWrapper.offsetWidth);
